@@ -1,72 +1,62 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #fff7e8, #ffe0b3);
-    color: #333;
-    line-height: 1.6;
-    text-align: left;
-}
-
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-    padding: 0 15px;  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fff7e8, #ffe0b3);
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #ffb347, #ffcc33);
-    padding: 1.5rem 0;
-    text-align: center;
-    border-bottom: 3px solid #e68a00;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  padding: 1.5rem 0;
+  text-align: center;
+  border-bottom: 3px solid #e68a00;
+  border-radius: 0 0 15px 15px;
 }
 
 header h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Section Styles */
 section {
-    padding: 2.5rem 0;
-    background: #f7f7f7;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-    
+  padding: 2.5rem 0;
+  background: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
-  .column-right {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    padding: 0rem 2rem;
-  }
-  .column-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: #000;
-    padding: 0rem 2rem;
-  }
+.column-right, .column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 0rem 2rem;
+}
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
 section h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #e68a00;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+  font-size: 2rem;
+  color: #e68a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 1rem;
 }
 section h3{
   font-size: 2rem;
@@ -85,122 +75,110 @@ section h4 {
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
+
+section h5{
+
+  font-size: 1.5rem;
+  text-align: center;
+  color: #e68a00;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
 section p {
-    font-size: 1.5rem;
-    text-align: left;
-    color: #555;
-    line-height: 1.8;
+  font-size: 1.2rem;
+  color: #555;
+  text-align: left;
+  line-height: 1.8;
+  margin: 0.5rem 0;
 }
 
-/* Footer Styles */
+/* Footer Section */
 footer {
-    background: linear-gradient(135deg, #ffcc33, #ffb347);
-    text-align: left;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #000000;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffcc33, #ffb347);
+  text-align: left;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #000000;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Modern Art Decorations */
-body:before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, #ffb347 50%, transparent 100%);
-    z-index: -1;
-    opacity: 0.5;
-}
-
-body:after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    right: -100px;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, #ffcc33 50%, transparent 100%);
-    z-index: -1;
-    opacity: 0.5;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 400px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    section h2 {
-        font-size: 1.6rem;
-    }
-
-    section p {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 1.5rem;
-    }
-    .projects-grid {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-      }
-}
-
-
-
+/* Projects Section */
 #projects {
-    padding: 10rem 5.5rem;
-    text-align: center;
-  }
-  
-  #projects > p {
-    margin-bottom: 5rem;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 5rem;
-    margin: 2.5rem auto;
-  }
-  
-  @media (max-width: 400px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-      margin: 0 auto;
-    }
-  }
-  
-  .card {
-    position: relative;
-    padding-bottom: 2rem;
-    border: 1px solid rgba(217, 217, 217, 0.5);
-    border-radius: 2.5px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 0 2rem -0.7rem #D9D9D9;
-    border: 1px solid #D9D9D9;
-  }
-  
-  .desc {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .project-tile {
-    margin: 2rem 0 2rem 0;
-  }
-  
-  .project-tile > a {
-    color: #F2797B;
-    font-weight: 200;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid rgba(217, 217, 217, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.desc {
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #333;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.project-tile {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e68a00;
+}
+
+/* Responsive Styles */
+@media (max-width: 400px) {
+  #projects {
+      padding: 1.5rem 0.5rem;
   }
 
-  
-  
+  .projects-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .desc {
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+
+  .card {
+      padding: 0.5rem;
+  }
+
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p {
+      font-size: 1.5rem;
+  }
+}
